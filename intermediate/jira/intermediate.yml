@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: int_jira__resumo_chamados
+    description: "Resumo dos chamados por tipo e status, com totais e datas de criação/atualização."
+    columns:
+      - name: tipo_chamado
+        description: "Tipo do chamado no Jira"
+      - name: status_chamado
+        description: "Status atual do chamado"
+      - name: total_chamados
+        description: "Número de chamados nesta combinação tipo + status"
+      - name: primeiro_chamado
+        description: "Data de criação mais antiga neste grupo"
+      - name: ultimo_update
+        description: "Data de atualização mais recente neste grupo"

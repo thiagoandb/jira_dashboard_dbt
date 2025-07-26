@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: jira_analysis
+    schema: jira_analysis
+    database: primodesk
+    tables:
+      - name: jira_raw
+        identifier: jira_raw
+        description: Tabela bruta extraída do Jira contendo os chamados.
+        columns:
+          - name: key
+            description: Identificador do chamado no Jira.
+          - name: fields_status_name
+            description: Status do chamado.
+          - name: fields_priority_name
+            description: Prioridade do chamado.
+          - name: fields_issuetype_name
+            description: Tipo de solicitação.
+          - name: fields_created
+            description: Data de criação do chamado.
+          - name: fields_updated
+            description: Última atualização do chamado.
